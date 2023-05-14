@@ -16,7 +16,12 @@ true_b = 4.2
 features, labels = synthetic_data(true_w, true_b, 1000)
 print("features:", features[0], "\nlabels:", labels[0])
 
-print(features[:,(1)].detach().numpy())
+#xxx = torch.arange(100)
+#xxx = xxx.reshape(-1,10)
+#print(xxx[:,(1,7)])
+#print(xxx[:,(1)])
+#print(xxx[:,(1)].detach())
+#print(xxx[:,(1)].detach().numpy())
 
-#d2l.set_figsize()
-#d2l.plt.scatter(features[:,(1)].detach().numpy(), labels.detach().numpy(), 1);
+d2l.set_figsize()
+d2l.plt.scatter(features[:,(1)].detach().numpy(), labels.detach().numpy(), 1);
